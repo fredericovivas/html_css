@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: blanchedalmond;
+            padding: 3px;
+            box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.374); /* deslocamento horizontal, vertical, espalhamento da sombra e a cor da sombra*/
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 10px;
+        }
+
+        article{
+            background-color: azure;
+            padding: 5px;
+            border-radius: 0px 10px; /*se deixar só 2 ele faz na vertical, se meter os 4 ele faz em cada canto individual, se deixar so 1 ele faz em todos igual*/
+            box-shadow: 5px 4px 7px 2px rgba(0, 0, 0, 0.403);
+        }
+
+        article > aside{
+            background-color: darkgray;
+        }
+
+        footer{
+            background-color: aqua;
+            color: darkblue;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: black;
+            border-radius: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre Portugal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusantium maxime laboriosam repellat ipsum velit. Pariatur minus asperiores nemo facilis, provident eius. Fuga, expedita. In quae impedit iure temporibus est.</p>
+                <aside>
+                    <p>Artigo escrito por José Saramago</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo Frederico</p>
+    </footer>
+
+    <div id="bola"></div>
+
+</body>
+</html>
