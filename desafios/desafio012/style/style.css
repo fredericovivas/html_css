@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+  width: auto;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+header > h1 {
+  padding-bottom: 15px;
+}
+
+header > p > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header > p > a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+main > section > p {
+  font-size: xx-large;
+  padding: 20px 0px 30px 30px;
+}
+
+#joaninha {
+  color: white;
+  height: 1000px;
+  background-image: url(../imagens/background001.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+footer > p > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer > p > a:hover {
+  color: white;
+  text-decoration: underline;
+}
