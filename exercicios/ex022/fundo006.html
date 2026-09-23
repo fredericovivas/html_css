@@ -8,16 +8,29 @@
     <style>
         body{
             height: 100vh;
+            
             background-color: black;
             background-image: url(images/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /*independente do tamanho da tela ele mostra o background sendo a imagem, para isso ele pode cortar um pouco a imagem, mas é a forma para deixar a imagem a ser o background todo.*/
+            background-attachment: fixed; /* deixa a imagem fixa na tela, se eu rolar para baixo não irá afetar a imagem, ela vai continuar igual*/ 
+            
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+            */
+
+            /*
+            background: black url(images/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover; 
+            
+            O background-size ainda não funciona na shorthand*/
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;

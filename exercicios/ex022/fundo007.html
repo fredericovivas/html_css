@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        #container{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        .content{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%; 
+            top: 50%; /*para mexer no lugar onde quero o background, tenho de deixar o container com position: relative; e o content com position: absolute; dito isto posso alterar o left, top, etc....
+            */
+
+            transform: translate(-50%, -50%);
+            /* serve pra redefinir onde quero a imagem, no caso, o primeiro é negativo anda para a esquerda, o segundo é negativo anda para cima, caso fossem os dois positivos andavam para direita e baixo. */
+        }
+
+    </style>
+
+</head>
+<body>
+    <section id="container">
+        <article class="content">
+
+
+        </article>
+    </section>
+    
+</body>
+</html>
