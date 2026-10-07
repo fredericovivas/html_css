@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 <body>
-    
+    <h1>Teste de Formulário</h1>
+    <form action="registro.php" method="post" autocomplete="on">
+        <p>
+            <label for="isuser">User: </label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15"  placeholder="Username" autocomplete="username">
+        </p>
+        <p>
+                <label for="ipassword">Password: </label>
+                <input type="password" name="password" id="ipassword" required minlength="8" maxlength="20" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
 </body>
 </html>
